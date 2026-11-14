@@ -1,0 +1,70 @@
+/* Estilos de la portada principal. */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("imagenes/Diseño sin título.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: cursive;
+}
+
+.portada {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.texto-blanco,
+.texto-blanco-2,
+.lol {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #57246f;
+}
+
+.texto-blanco {
+    margin-top: 25px;
+    font-size: 38px;
+}
+
+.texto-blanco-2 {
+    margin-top: 25px;
+    font-size: 60px;
+}
+
+.lol {
+    font-size: 20px;
+}
+
+.decoracion {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    z-index: 1;
+}
+
+.navegacion-principal {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.enlace {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a:hover {
+    color: #e84393;
+}

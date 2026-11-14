@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Inglés Básico</title>
+    <link rel="stylesheet" href="disenio3.css">
+</head>
+<body>
+    <header>
+        <h1 id="bienvenida">WELCOME!</h1>
+        <p class="introduccion">¡Estamos felices de que quieras aprender inglés!</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="repaso-video">
+            <h2 id="repaso-video">Para iniciar, veremos un breve repaso del verbo To Be.</h2>
+
+            <ul class="temas-video">
+                <li>Conocer el significado del verbo To Be.</li>
+                <li>Identificar sus formas: am, is y are.</li>
+                <li>Escuchar y observar algunos ejemplos.</li>
+            </ul>
+
+            <figure class="video-contenedor">
+                <video controls>
+                    <source src="vieop.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                </video>
+                <figcaption>Video de repaso: el verbo To Be.</figcaption>
+            </figure>
+        </section>
+
+        <nav class="enlaces" aria-label="Navegación entre lecciones">
+            <a href="dosito.html">← Regresar a la página dos</a>
+            <a href="cuatrosito.html">Ir a la siguiente página →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>ENGLISH 5 | Aprende a tu propio ritmo</p>
+    </footer>
+
+    <script>
+        // Recupera el nombre enviado desde el formulario.
+        const parametros = new URLSearchParams(window.location.search);
+        const nombre = parametros.get("nombre");
+
+        if (nombre && nombre.trim() !== "") {
+            document.getElementById("bienvenida").textContent =
+                "WELCOME, " + nombre.trim() + "!";
+        }
+    </script>
+</body>
+</html>

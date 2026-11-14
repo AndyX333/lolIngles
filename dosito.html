@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglés Básico</title>
+    <link rel="stylesheet" href="disenio2.css">
+</head>
+<body>
+    <header>
+        <h1>Inglés Básico</h1>
+        <p>
+            En esta página aprenderemos algunos temas básicos del idioma inglés,
+            como el verbo <strong>To Be</strong>, los pronombres personales,
+            vocabulario y expresiones sencillas.
+        </p>
+    </header>
+
+    <main>
+        <section aria-labelledby="registro-titulo">
+            <form id="formulario-estudiante" action="tresito.html" method="get">
+                <h2 id="registro-titulo">WELCOME!</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Escribe tu nombre" required maxlength="40">
+
+                <br><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad"
+                       placeholder="Escribe tu edad" min="1" required>
+
+                <br><br>
+
+                <label for="nivel">Nivel de inglés:</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="">Selecciona tu nivel</option>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Medio</option>
+                    <option value="nulo">Nulo</option>
+                </select>
+
+                <button type="submit">¡Comenzar! →</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Navegación secundaria">
+            <a href="index.html">← Regresar a la página principal</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Comprueba los datos y muestra un mensaje antes de continuar.
+        const formulario = document.getElementById("formulario-estudiante");
+
+        formulario.addEventListener("submit", function (evento) {
+            const nombre = document.getElementById("nombre").value.trim();
+            const edad = Number(document.getElementById("edad").value);
+            const nivel = document.getElementById("nivel").value;
+
+            if (nombre === "" || edad < 1 || nivel === "") {
+                evento.preventDefault();
+                alert("Por favor, completa todos los campos correctamente.");
+                return;
+            }
+
+            alert("¡Bienvenido/a, " + nombre + "! Vamos a aprender inglés.");
+        });
+    </script>
+</body>
+</html>

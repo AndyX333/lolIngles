@@ -1,0 +1,96 @@
+/* Estilos de la página que contiene el video. */
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("imagenes/ee.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    color: #371780;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    color: #371780;
+    font-size: 30px;
+    margin: 20px 0 35px;
+}
+
+h2 {
+    color: #371780;
+    font-size: 27px;
+    margin: 30px 0;
+}
+
+.introduccion {
+    color: #000000;
+    font-size: 22px;
+    margin: 20px auto;
+}
+
+.temas-video {
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.82);
+    border: 2px solid #d8a5ff;
+    border-radius: 15px;
+    padding: 18px 35px;
+    line-height: 1.8;
+}
+
+.video-contenedor {
+    display: table;
+    margin: 25px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #d8a5ff;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(55, 23, 128, 0.2);
+}
+
+video {
+    display: block;
+    width: 450px;
+    max-width: 100%;
+    height: 450px;
+    object-fit: contain;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 12px;
+    color: #371780;
+}
+
+.enlaces {
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #d8a5ff;
+    border-radius: 18px;
+    display: inline-block;
+}
+
+.enlaces a {
+    display: block;
+    color: #b700ff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 25px 10px;
+}
+
+.enlaces a:hover {
+    color: #e84393;
+}
+
+footer {
+    margin-top: 30px;
+}

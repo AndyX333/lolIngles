@@ -1,0 +1,107 @@
+/* Estilos de la página de bienvenida y formulario. */
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("imagenes/lolip.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    color: #371780;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #371780;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #371780;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #000000;
+    font-size: 24px;
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: left;
+    width: 300px;
+    max-width: 90%;
+    margin: 35px auto;
+    padding: 25px;
+    font-size: 18px;
+    border: 2px solid #d8a5ff;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(55, 23, 128, 0.2);
+    box-sizing: border-box;
+}
+
+form h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    color: #371780;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b700ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #d8a5ff;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    background-color: #b700ff;
+    color: white;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e84393;
+}
+
+a {
+    display: inline-block;
+    color: #b700ff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+a:hover {
+    color: #e84393;
+}
